@@ -1,0 +1,548 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+/* top nav  */
+
+
+.top-nav{
+    width: 100%;
+    height: 50px;
+    padding: 16px 100px;
+    background-color: white;
+    overflow:hidden;
+    position: fixed;
+    top: 0px;
+    z-index: 1005;
+}
+
+/* top nav khi responsive */
+
+
+.top-nav-show{
+    position: fixed;
+    top: 0px;
+    z-index: 1001;
+    display: none;
+    width: 100%;
+    height: 50px;
+    padding: 0px 10%;
+    background-color: white;
+    
+    
+}
+.top-nav-show .left{
+    width: 20%;
+    float: left;
+    padding: 16px 0px;
+}
+.top-nav-show .right{
+    text-align: right;
+    width: 20%;
+    float: right;
+    padding: 16px 0px;
+}
+.show-center{
+    text-align: center;
+    float: left;
+    width: 60%;
+    padding: 5px;
+}
+.menu-respon{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: none;
+    width: 100%;
+    z-index: 1005;
+    background-color: white;
+}
+.menu-show{
+    margin: 0;
+    width: 80%;
+    float: left;
+}
+.icon-hidden{
+    padding: 10px 10px;
+    background-color:#fcca03;
+    float: right;
+    font-size: 30px;
+}
+.menu-show ul{
+    padding: 0;
+    width: 100%;
+}
+.menu-show ul li a{
+    padding: 15px 20px;
+    display: block;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border-bottom: 0.001px solid black;
+}
+
+.left{
+    height: 100%;
+    float: left;
+}
+.right{
+    height: 100%;
+    float: right;
+}
+.right div{
+    padding-left: 20px;
+    float: left;
+}
+/* style cho tiêu đề */
+
+
+.header{
+    width: 100%;
+    height: 88px;
+    padding: 0 100px;
+    background-color:#fcca03;
+    position: fixed;
+    top: 50px;
+    z-index: 10005;
+}
+.header h1{
+    padding: 25px 0;
+    float: left;
+}
+.header-menubar{
+    height: 100%;
+    width: 100%;
+}
+.center-menu{
+    width: 80%;
+    height: 100%;
+    padding-left: 20px;
+    float: left;
+}
+.center-menu > ul{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.center-menu > ul > li{
+    float: left;
+    position: relative;
+}
+.center-menu > ul > li > a{
+    font-size: 20px;
+    display: block;
+    padding: 32px 25px;
+    color: black;
+}
+.center-menu > ul > li:hover .bo{
+    display: block;
+}
+.bo{
+    position: absolute;
+    top: 88px;
+    left: auto;
+    width: 750px;
+    height: auto;
+    display: none;
+    z-index: 1001;
+    background-color: white;
+}
+.con{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+}
+.chau{
+    width: 33.33%;
+    padding: 10px;
+}
+.chau ul{
+    background-color: rgb(255, 17, 0);
+    width: 100%;
+    padding: 0px;
+}
+.chau ul li a{
+    display: block;
+    padding: 10px 20px;
+    font-size:20px;
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.cart{
+    float: right;
+}
+.cart i{
+    font-size: 20px;
+    padding: 34px 0px 34px 10px;
+}
+
+
+
+/* tạo nội dung cho tang web */
+
+.conten{
+    width: 100%;
+    padding:0px 90px;
+    margin-top: 138px;
+    background-color: whitesmoke;
+}
+.conten .slider{
+    width: 100%;
+    height: 450px;
+}
+.conten .slider .slishow{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
+.conten .slider .slishow .slide-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.conten .slider .slishow .slide-image img{
+    width: 100%;
+    height: 100%;
+}
+.conten .slider .slishow .slide-image .caption{
+    padding:200px 100px;
+    animation: chay;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.next{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    z-index: 1000;
+}
+.prev{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    z-index: 1000;
+}
+.dot{
+    width: 100%;
+    height: 10%;
+    padding: 11px 40%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+.dot button{
+    width: 20px;
+    height: 20px;
+    margin: 0 15px;
+    outline: none;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    float: left;
+}
+
+
+
+
+/* phần hiển thị sản phẩm */
+
+.list{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+
+}
+.list .list-box{
+    padding: 20px 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.list .list-box .box{
+    width: 33.33%;
+    height: 400px;
+    padding: 10px;
+    
+}
+.list .list-box .box .item{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.list .list-box .box .item .produc{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list .list-box .box .item .produc img{
+    width: 100%;
+    height: 100%;
+}
+.list .list-box .box .item .bycart{
+    display: inline-flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+.list .list-box .box .item .bycart div{
+    width: 100%;
+    display: inline-flex;
+    flex-flow: column;
+    align-items: center;
+}
+.list .list-box .box .item .bycart p{
+    font-size: 16px;
+    color: rgb(3, 3, 3);
+    text-align: center;
+}
+.list .list-box .box .item .bycart button{
+    background-color: #fcca03;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+
+}
+.text{
+    width: 100%;
+    padding: 10px 200px;
+    display: flex;
+    flex-flow: column wrap;
+}
+.phu{
+    /* padding: 0px !important; */
+    height: 250px !important;
+}
+.hotro{
+    align-items: flex-start !important;
+}
+.text-con{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-con h3, h5, p{
+    text-align: center;
+    margin: 20px;
+}
+
+/* tạo chân trang */
+
+.footer{
+    width: 100%;
+    display: flex;
+    padding: 10px 100px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+   
+}
+.footer p{
+    margin: 0;
+}
+.footer-top, .footer-bottom{
+    padding: 0 100px;
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.footer-top input, button{
+    border: 0.1px solid;
+    outline: none;
+    padding: 5px;
+    margin-top: 20px;
+
+}
+.footer-top input{
+    border-radius: 10px 0 0 10px;
+}
+.footer-top button{
+    border-radius: 0px 10px 10px 0px;
+    background-color: #fcca03;
+}
+.foot-concat i{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.foot-secher div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+.footer-bottom .columns{
+    width: 25%;
+    align-items: center;
+}
+.footer-bottom .columns ul{
+    padding: 0%;
+}
+.footer-bottom .columns ul li a{
+    color: white;
+}
+.footer h2, h3.p{
+    margin: 0;
+}
+.footer-top .foot-left, .foot-secher, .foot-concat{
+    text-align: center;
+    width: 33.33%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+@keyframes chay{
+   0%{
+    margin-left: -300px;
+    opacity: 0;
+    visibility: hidden;
+   }
+   100%{
+    margin-left: 0px;
+    margin-top: 0px;
+   }
+}
+
+@media screen and (max-width:1024px){
+    .top-nav-show{
+        display: block;
+    }
+    .top-nav, .header{
+        display:none;
+    }
+    .menu-respon{
+        display: none;
+    }
+    .conten{
+        width: 100%;
+        padding:0px 2%;
+    }
+    .conten .slider .slishow{
+        padding: 0;
+    }
+    .next{
+        position: absolute;
+        right: 0;
+    }
+    .prev{
+        left: 0;
+    }
+
+    .list .list-box .box{
+        width: 33.33%;
+    }
+    .text{
+        width: 100%;
+        padding: 10px 100px;
+    }
+}
+@media screen and (max-width:768px){
+    .top-nav-show{
+        display: block;
+    }
+    .top-nav, .header{
+        display:none;
+    }
+    .conten{
+        width: 100%;
+        padding:0px 0%;
+        margin-top: 50px;
+    }
+    .next{
+        right: 0;
+    }
+    .prev{
+        left: 0;
+    }
+    .list .list-box{
+        padding: 0;
+    }
+    .list .list-box .box .item{
+        padding: 5px;
+    }
+    .list .list-box .box{
+        width: 50%;
+        height: 250px;
+    }
+    .list .list-box .box .item .bycart div button{
+        font-size: 10px;
+    }
+    .list .list-box .box .item .bycart div p{
+        font-size: 10px;
+    }
+    .dot button{
+        width: 20%;
+        height: 20px;
+        margin: 0 6%;
+        padding: 0;
+    }
+    .text{
+        width: 100%;
+        padding: 10px 30px;
+    }
+    .phu{
+        padding: 0 !important;
+        width: 33.33% !important;
+        height: 150px !important;
+    }
+    .phu p, h2{
+        font-size: 10px !important;
+        margin: 0;
+    }
+    .footer{
+        padding: 0;
+    }
+    .footer-top, .footer-bottom{
+        padding: 10px 0;
+    }
+    .foot-secher div{
+        flex-direction: column;
+    }
+    .foot-secher div input{
+        width: 100%;
+        margin: 0;
+        border-radius: 10px;
+    }
+    .foot-secher div button{
+        width: 100%;
+        margin: 0;
+        border-radius: 10px;
+    }
+    .footer-bottom .columns ul li a{
+        font-size: 10px;
+    }
+}
